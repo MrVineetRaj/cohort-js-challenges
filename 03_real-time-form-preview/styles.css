@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100svh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 350px;
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+span {
+  position: relative;
+  width: 100%;
+  /* background: #000; */
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  p {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border-top: 1px solid black;
+    text-wrap: wrap;
+  }
+
+  label {
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    top: -10px;
+    background: white;
+    font-weight: 700;
+    color: blue;
+    padding: 0 10px;
+  }
+}
