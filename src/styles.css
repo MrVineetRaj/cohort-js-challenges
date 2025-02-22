@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(36, 2, 62), black);
+  background: linear-gradient(to bottom, black, rgb(18, 0, 32));
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100svh;
   color: rgb(210, 210, 210);
@@ -80,7 +80,9 @@ main h1 {
   border-radius: 10px;
   padding: 10px;
   position: relative;
-
+  img {
+    width: 100%;
+  }
   p {
     color: black;
     font-weight: 700;
