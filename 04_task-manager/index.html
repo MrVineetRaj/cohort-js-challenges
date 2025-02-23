@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Dom Challenges</a>
+
+      <div class="social-links">
+        <a href="https://www.github.com"> Github </a>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="heading">Your Crazy Task Manager</h1>
+      <div class="container">
+        <form action="" id="task-form">
+          <div class="task-details">
+            <span>
+              <label for="">Task</label>
+              <input type="text" name="task" />
+            </span>
+            <span>
+              <label for="">Category</label>
+              <select name="category">
+                <option value="">--Category--</option>
+                <option value="academics">Academics</option>
+                <option value="diet">Diet</option>
+                <option value="job">Job</option>
+                <option value="gym">Gym</option>
+              </select>
+            </span>
+          </div>
+
+          <button type="submit">Add Task</button>
+        </form>
+
+        <select name="filter" id="filter">
+          <option value="">--Category--</option>
+          <option value="academics">Academics</option>
+          <option value="diet">Diet</option>
+          <option value="job">Job</option>
+          <option value="gym">Gym</option>
+        </select>
+
+        <div class="tasks-container">
+          <span class="tasks-container-header">
+            <h3>Tasks</h3>
+            <small class="completed"
+              >completed : <span id="no-of-tasks-completed">0</span></small
+            >
+          </span>
+          <hr />
+          <ul id="taskList">
+            <li>
+              <input type="checkbox" id="mark-completed" />
+              <span class="li-right">
+                <span>
+                  <p>Hello</p>
+                  <small>Cat</small>
+                </span>
+                <button>X</button></span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="output">
+          <p>Total <span id="numberOfTasksDisplayed"></span></p>
+          <span>
+            <button id="prev">&lt</button>
+            <p id="page">1</p>
+            <button id="next">&gt</button>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

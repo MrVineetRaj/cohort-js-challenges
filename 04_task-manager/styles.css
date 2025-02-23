@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(to bottom, black, rgb(18, 0, 32));
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100svh;
+  height: 100svh;
+  flex-direction: column;
+}
+
+nav {
+  padding: 15px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: black;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 21px;
+  }
+  .social-links {
+    a {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #f89d00,
+    #00ff11
+  ); /* Your gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* For most browsers */
+  font-weight: 900;
+}
+
+.container {
+  /* padding: 10px; */
+  /* background: white; */
+  min-width: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+  }
+}
+
+form {
+  padding: 10px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+
+  button {
+    padding: 5px;
+    background: purple;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+  }
+}
+
+input,
+select {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+}
+
+.task-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 100%;
+}
+
+.tasks-container {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  margin-top: 5px;
+
+  li {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    padding: 5px;
+    background: rgb(233, 232, 232);
+    border-radius: 5px;
+    gap: 5px;
+
+    .li-right {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px;
+      border: 0;
+      font-weight: 700;
+      border-radius: 5px;
+      background: red;
+      color: white;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:active {
+        scale: 0.8;
+      }
+    }
+
+    small {
+      background: rgb(255, 159, 255);
+      color: purple;
+      text-align: center;
+      font-style: italic;
+      border-radius: 5px;
+      font-size: 10px;
+    }
+  }
+}
+
+#filter {
+  background: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.tasks-container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .completed {
+    background: rgb(174, 244, 174);
+    padding: 2px 5px;
+    font-style: italic;
+    color: green;
+    display: flex;
+    gap: 2px;
+  }
+}
+
+.output {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    button {
+      padding: 10px;
+      border: 0;
+      font-weight: 700;
+      border-radius: 5px;
+      background: blue;
+      color: white;
+      transition: all 0.3s;
+      cursor: pointer;
+      font-weight: 700;
+
+      &:active {
+        scale: 0.8;
+      }
+    }
+  }
+}
