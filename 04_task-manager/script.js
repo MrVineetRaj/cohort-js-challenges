@@ -17,7 +17,7 @@ let allTasks = [];
 let tasks = [];
 let totalNumberOfTasks = 0;
 let pageNumber = 0;
-let limit = 2;
+let limit = 3;
 let completedTaskCnt = 0;
 
 let tasksShown = limit;
@@ -38,6 +38,7 @@ taskForm.addEventListener("submit", (e) => {
   let taskCategory = taskForm[1].value;
 
   const currTime = new Date().getTime();
+
   allTasks.push({
     taskTitle: task,
     taskCategory: taskCategory,
@@ -62,7 +63,7 @@ const loadTasks = () => {
   let tempTasks = localStorage.getItem("tasks");
   allTasks = JSON.parse(tempTasks) || [];
 
-  if (currCategory) {
+  if (currCategory !== "") {
     categoryWiseTasks = allTasks.filter((task) => {
       return task.taskCategory == currCategory;
     });
@@ -87,10 +88,14 @@ const loadTasks = () => {
   const taskList = document.getElementById("taskList");
   taskList.innerHTML = "";
 
-  tasks.splice(0, pageNumber * limit);
-  tasks.splice(limit, 5);
+  // tasks.splice(0, pageNumber * limit);
+  // tasks.splice(limit, );
 
-  tasks.forEach((task, index) => {
+  const startIndex = pageNumber * limit;
+  const endIndex = startIndex + limit;
+
+  for (let i = startIndex; i < endIndex && i < totalNumberOfTasks; i++) {
+    const task = tasks[i];
     let newListItem = document.createElement("li");
 
     if (task.isCompleted) {
@@ -116,7 +121,7 @@ const loadTasks = () => {
     }
 
     taskList.appendChild(newListItem);
-  });
+  }
 
   //deleting the task
   document.querySelectorAll(".delete-btn").forEach((btn, index) => {

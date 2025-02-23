@@ -48,9 +48,8 @@ main {
 .heading {
   background: linear-gradient(
     to right,
-    #ffffff,
-    #f89d00,
-    #00ff11
+    #3300ff,
+    #bb00ff
   ); /* Your gradient colors */
   -webkit-background-clip: text;
   background-clip: text;
