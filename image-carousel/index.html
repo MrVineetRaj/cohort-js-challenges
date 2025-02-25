@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/assets/logo.svg" type="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="gradient-text">Image Carousel</h1>
+      <div class="all-images">
+        <span id="prev-btn" class="btn">&lt;</span>
+        <span id="next-btn" class="btn">&gt;</span>
+        <div id="img-4" class="img-container">
+          <img src="./src/image-4.jpg" alt="" />
+          <p>Peace</p>
+        </div>
+        <div id="img-2" class="img-container">
+          <img src="./src/image-2.jpg" alt="" />
+          <p>Cute chameleon</p>
+        </div>
+        <div id="img-3" class="img-container">
+          <img src="./src/image-3.jpg" alt="" />
+          <p>From top of the mountain</p>
+        </div>
+        <div id="img-1" class="img-container">
+          <img src="./src/image-1.jpg" alt="" />
+          <p>Beautiful Sunset View</p>
+        </div>
+        <div id="img-5" class="img-container">
+          <img src="./src/image-5.jpg" alt="" />
+          <p>Moving Slowly like turtle</p>
+        </div>
+      </div>
+
+      <div class="image-tracker-container">
+        <span class="image-tracker"></span>
+        <span class="image-tracker"></span>
+        <span class="image-tracker"></span>
+        <span class="image-tracker"></span>
+        <span class="image-tracker"></span>
+      </div>
+    </div>
+
+    <script type="module" src="./dom-elements.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
