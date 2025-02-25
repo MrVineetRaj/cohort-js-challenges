@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/assets/logo.svg" type="image" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Review Collector</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Dom Challenges</a>
+
+      <div class="social-links">
+        <a href="https://www.github.com"> Github </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="review-collection-container">
+          <h2>New Feedback</h2>
+
+          <form action="" class="feedback-form">
+            <select name="" id="">
+              <option value="">--Feedback Type--</option>
+              <option value="bug">Report a Bug</option>
+              <option value="feedback">Feedback</option>
+            </select>
+            <span class="input-container">
+              <p>Your Name</p>
+              <input type="text" />
+            </span>
+            <span class="input-container stars-container">
+              <p>How much will you rate us ?</p>
+              <span id="stars">
+                <p class="star">&star;</p>
+                <p class="star">&star;</p>
+                <p class="star">&star;</p>
+                <p class="star">&star;</p>
+                <p class="star">&star;</p>
+              </span>
+            </span>
+            <!-- &#11088; -->
+
+            <span class="input-container">
+              <p>Your Thoughts</p>
+              <textarea name="" id="" rows="10"> </textarea>
+            </span>
+
+            <button class="" style="width: 100px; padding: 5px 20px ;font-weight: bold; color: white; border: 0;border-radius: 5px; background: blue;">Submit</button>
+          </form>
+        </div>
+        <div class="review-display-container">
+          <h2>Previous feedback</h2>
+          <ul id="feedbacks">
+            <li>
+              <span>
+                <div class="avatar">N</div>
+                <span>
+                  <p class="user-name">name</p>
+
+                  <p class="rating">&#11088;&#11088;&#11088;&#11088;</p></span
+                ></span
+              >
+              <p class="user-thoughts">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                tempore numquam, quo ex temporibus quos sint fugiat accusantium
+                tenetur recusandae.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
